@@ -1,7 +1,7 @@
 export default function iterateThroughObject(reportWithIterator) {
   let employeeListString = '';
   reportWithIterator.forEach((employee) => {
-    if (employeeListString) {
+    if (employee) {
       employeeListString += `| ${employee}`;
     } else {
       employeeListString = employee;
