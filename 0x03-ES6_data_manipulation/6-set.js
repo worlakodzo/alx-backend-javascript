@@ -3,4 +3,3 @@ function setFromArray(array) {
 }
 
 export default setFromArray;
-
