@@ -2,7 +2,7 @@ const updateStudentGradeByCity = (studentes, city, newGrades) => studentes.filte
   if (student.location === city) {
     return student;
   }
-  return null;
+  return false;
 }).map((student) => {
   if (student) {
     let grade = 'N/A';
