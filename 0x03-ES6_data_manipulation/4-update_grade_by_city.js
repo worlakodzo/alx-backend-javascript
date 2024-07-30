@@ -6,8 +6,10 @@ const updateStudentGradeByCity = (studentes, city, newGrades) => studentes.filte
 }).map((student) => {
   if (student) {
     let grade = 'N/A';
-    if (newGrades.has('studentId')) {
-      grade = newGrades[student.id];
+    for (const grade in newGrades) {
+      if (grade.studentId === student.id) {
+        grade = grade.grade;
+      }
     }
     return { ...student, grade };
   }
