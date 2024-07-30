@@ -3,7 +3,7 @@ function getStudentsByLocation(students, city) {
     if (student.location === city) {
       return student;
     }
-    return [];
+    return false;
   });
   return studentsByLocation;
 }
